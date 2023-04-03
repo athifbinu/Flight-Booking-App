@@ -1,0 +1,23 @@
+.hero__content{
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.hero__content{
+    padding-top: 80px;
+}
+
+.serche input{
+   border: none;
+   outline: none;
+   padding: 7px 10%;
+}
+
+.serche{
+    width: 50%;
+    border: 1px solid #17bf9e;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 50px;
+}

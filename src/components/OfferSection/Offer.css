@@ -1,0 +1,16 @@
+.single_offer_items{
+    padding: 15px;
+}
+
+.offer_img img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.boking-btn{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #17bf9e;
+    
+}
