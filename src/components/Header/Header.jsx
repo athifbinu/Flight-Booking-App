@@ -4,7 +4,7 @@ import "./Header.css"
 
 
 import {MdOutlineFlightTakeoff} from "react-icons/md"
-import {AiFillPhone} from "react-icons/ai"
+
 import {AiOutlineMenu} from "react-icons/ai"
 
 
@@ -67,7 +67,7 @@ const Header = () => {
 
           <div className="nav__right">
             <p className="mb-0 d-flex align-items-center gap-2">
-              <i ><AiFillPhone/></i> +88 0123456789
+               {/* loging */}
 
             </p>
           </div>
@@ -75,7 +75,7 @@ const Header = () => {
         
         <div className="mobile__menu">
           <span> 
-            {/* onclick */}
+        
             <i><AiOutlineMenu/></i>
           </span>
         </div>

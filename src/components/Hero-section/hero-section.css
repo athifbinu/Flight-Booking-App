@@ -6,18 +6,32 @@
 .hero__content{
     padding-top: 80px;
 }
-
+.hero-img{
+    border-radius: 10px;
+}
 .serche input{
-   border: none;
-   outline: none;
-   padding: 7px 10%;
+   
+    border-radius: 15px;
 }
 
 .serche{
-    width: 50%;
-    border: 1px solid #17bf9e;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    border-radius: 50px;
+    display: grid;
+    align-content: center;
+    gap: 27px;
+    
+}
+.serche input{
+    height: 38px;
+}
+.serche button{
+    background: #17bf9e;
+  color: #fff;
+  width: 90px;
+  border-radius: 22px;
+  border: none;
+  transition: 0.3s ease;
+  font-size: 14px;
+  height: 35px;
+  opacity: 0.8;
+  text-align: center;
 }

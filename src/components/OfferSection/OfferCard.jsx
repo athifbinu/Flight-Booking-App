@@ -22,7 +22,7 @@ const OfferCard = (props) => {
             <p className='offfer d-flex
              align-items-center gap-1'>
                  <BsFillBookmarksFill/>
-                <button className='boking-btn'>Book Now</button>
+                <button className='hero-btn'>Book Now</button>
             </p>
 
            </div>

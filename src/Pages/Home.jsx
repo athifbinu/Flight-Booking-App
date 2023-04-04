@@ -4,6 +4,9 @@ import HeroSection from "../components/Hero-section/HeroSection"
 import CompanySections from '../components/companySection/CompanySections'
 import About from '../components/Aboutus/About'
 import Offers from "../components/OfferSection/Offfer"
+import Choose from '../components/ChooseUs/Choose'
+import Packages from '../components/Packages/Packages'
+import Footer from '../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -13,7 +16,11 @@ const Home = () => {
         <CompanySections/>
         <About/>
         <Offers/>
+        <Choose/>
+        <Packages/>
+        <Footer/>
     </Fragment>
+  
   )
 }
 

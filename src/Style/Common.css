@@ -36,13 +36,33 @@ p {
   font-weight: 400;
 }
 
-button.btn {
+.hero-btn {
   background: #17bf9e;
   color: #fff;
-  padding: 7px 25px;
-  border-radius: 50px;
+  width: 90px;
+  border-radius: 22px;
+  border: none;
+  transition: 0.3s ease;
+  font-size: 14px;
+  height: 35px;
+  opacity: 0.8;
+
+
+}
+
+.hero-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #17bf9e; 
+  box-shadow:0 0 6px #17bf9e,
+             0 0 23px #17bf9e,
+             0 0 65px #17bf9e,
+             0 0 155px #17bf9e;
 }
 
 i {
   color: #17bf9e;
+}
+.br{
+  border-radius: 15px;
 }
