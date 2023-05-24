@@ -1,9 +1,11 @@
 import React from 'react'
-import Home from './Pages/Home'
+
+
+import Layout from './Components/Layout'
 const App = () => {
   return (
     <div>
-      <Home/>
+        <Layout/>
     </div>
   )
 }

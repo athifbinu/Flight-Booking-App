@@ -1,0 +1,11 @@
+.Search-box{
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 35px;
+
+}
+.Search-box input{
+    gap: 25px;
+}

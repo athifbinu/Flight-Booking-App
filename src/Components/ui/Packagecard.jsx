@@ -1,10 +1,11 @@
 import React from 'react'
-import "./Packages.css"
+import "../../Style/Home.css"
 
-const PackageCard = (props) => {
+const Packagecard = (props) => {
 
-    const { imgUrl, title, rating } = props.item;
+    const {imgUrl,title,rating}=props.item;
   return (
+
     <div className="single__free__course">
     <div className="package__img mb-5">
       <img src={imgUrl} alt="" className="w-100" />
@@ -25,4 +26,4 @@ const PackageCard = (props) => {
   )
 }
 
-export default PackageCard
+export default Packagecard
