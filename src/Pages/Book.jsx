@@ -52,6 +52,8 @@ const Book = () => {
                   <input className='wl fw-bold' type="text" placeholder='Passport Number'
                   required />
               </FormGroup>
+
+              <button className=''>Submit</button>
         
            </Form>
 

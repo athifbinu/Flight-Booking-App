@@ -48,29 +48,32 @@ const Search = () => {
             <button onClick={handleSearch}>Search</button>
         </div>
 
-      {
-        filter.map((flight,index)=>(
-
-          <div key={index} className="product-card">
-          <img src={flight.Img} alt="" className="product-image" />
-         <h3 className="product-name">{flight.flightName}</h3>
-         <p className="product-description">From={flight.from}</p>
-         <p className="product-description">TO ={flight.To}</p>
-        <p className="product-price">${flight.Ticket}</p>
-           <Link to="/Book">
-           <button className='card-btn'>Book Now</button>
-           </Link>
-         </div> 
-
-        ))
-      }
-
-
-
-
         
 
-     </div>
+   {filter.length > 0 ? (
+        <>
+          {filter.map((flight, index) => (
+            <div key={index} className="product-card">
+              <img src={flight.Img} alt="" className="product-image" />
+              <h3 className="product-name">{flight.flightName}</h3>
+              <p className="product-description">From: {flight.from}</p>
+              <p className="product-description">To: {flight.To}</p>
+              <p className="product-price">${flight.Ticket}</p>
+              <Link to="/Book">
+                <button className='card-btn'>Book Now</button>
+              </Link>
+            </div>
+          ))}
+        </>
+      ) : (
+        <div className="not-found text-center m-5">Not Fount Enter Data ?</div>
+      )}
+
+
+
+    </div>
+
+
 
 
 
