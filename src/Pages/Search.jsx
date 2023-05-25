@@ -60,7 +60,7 @@ const Search = () => {
               <p className="product-description">To: {flight.To}</p>
               <p className="product-price">${flight.Ticket}</p>
               <Link to="/Book">
-                <button className='card-btn'>Book Now</button>
+                <button className='hero-btn'>Book Now</button>
               </Link>
             </div>
           ))}

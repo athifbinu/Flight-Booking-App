@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container,Row,Col,FormGroup,Form } from 'reactstrap'
 
 
 import "../Style/Book.css"
 const Book = () => {
+
+
+
+
 
 
 
@@ -53,7 +57,7 @@ const Book = () => {
                   required />
               </FormGroup>
 
-              <button className=''>Submit</button>
+              <button className='hero-btn'>Submit</button>
         
            </Form>
 

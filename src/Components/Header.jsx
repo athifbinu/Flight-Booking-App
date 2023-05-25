@@ -6,36 +6,9 @@ import "../Style/Heder.css"
 import {MdOutlineFlightTakeoff} from "react-icons/md"
 
 import {AiOutlineMenu} from "react-icons/ai"
+import { Link } from 'react-router-dom'
 
 
-const navlink =[
-    {
-        display:'Home',
-        url:'#'
-
-    },
-    {
-        display:'About',
-        url:'#'
-
-    },
-    {
-        display:'Offers',
-        url:'#'
-
-    },
-    {
-        display:'Suits',
-        url:'#'
-
-    },
-    {
-        display:'Destinations',
-        url:'#'
-
-    },
-
-]
 
 
 const Header = () => {
@@ -54,11 +27,23 @@ const Header = () => {
         <div className="nav d-flex align-items-center gap-5">
           <div className="nav__menu"  >
             <ul className="nav__list">
-              {navlink.map((item, index) => (
-                <li key={index} className="nav__item">
-                  <a href={item.url}>{item.display}</a>
-                </li>
-              ))}
+              <li className='nav__item'>
+                 <Link to="/home">
+                   Home
+                 </Link>
+              </li>
+
+              <li className='nav__item'>
+                 <Link to="/Search">
+                   Search
+                 </Link>
+              </li>
+
+              <li className='nav__item'>
+                 <Link to="/Book">
+                   Book Now
+                 </Link>
+              </li>
             </ul>
           </div>
 

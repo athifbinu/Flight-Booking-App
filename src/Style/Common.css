@@ -37,23 +37,23 @@ p {
 }
 
 .hero-btn {
-  background: #17bf9e;
-  color: #fff;
   width: 90px;
   border-radius: 22px;
   border: none;
   transition: 0.3s ease;
   font-size: 14px;
-  height: 35px;
+  height: 41px;
+  background-color: #17bf9e;
   opacity: 0.8;
+  color: black;
+  cursor: pointer;
 
 
 }
 
 .hero-btn:hover {
   opacity: 1;
-  cursor: pointer;
-  background-color: #17bf9e; 
+  background-color: #17bf9e;; 
   box-shadow:0 0 6px #17bf9e,
              0 0 23px #17bf9e,
              0 0 65px #17bf9e,
@@ -66,3 +66,4 @@ i {
 .br{
   border-radius: 15px;
 }
+

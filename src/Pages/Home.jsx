@@ -99,7 +99,7 @@ const TourData=[
                  </p>
                  <div className="serche">
                    <Link to="/Search">
-                    <button>Start Now</button>
+                    <button className='hero-btn' >Start Now</button>
                    </Link>
                  </div>
               </div>
