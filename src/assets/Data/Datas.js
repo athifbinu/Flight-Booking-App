@@ -18,7 +18,7 @@ const data=[
         flightName:"Indico",
         from:"Kochi",
         To:"Bangloor",
-        Ticket:"12588",
+        Ticket:"12588", 
         Img:ImgUr2
     },
     {

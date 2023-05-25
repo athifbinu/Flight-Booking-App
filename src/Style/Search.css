@@ -1,11 +1,91 @@
-.Search-box{
-    width: 100%;
+
+
+.serch-box{
+
     text-align: center;
-    justify-content: space-between;
-    border-radius: 5px;
-    margin: 35px;
+    padding: 100px;
 
 }
-.Search-box input{
-    gap: 25px;
+.serch-box input{
+    border-radius: 5px;
+    height: 40px;
 }
+.serch-box button{
+    width: 90px;
+    border-radius: 22px;
+    border: none;
+    transition: 0.3s ease;
+    font-size: 14px;
+    height: 41px;
+    background-color: #17bf9e;
+    opacity: 0.8;
+    color: black;
+    cursor: pointer;
+}
+.serch-box button:hover{
+    opacity: 1;
+
+    background-color: #17bf9e;; 
+    box-shadow:0 0 6px #17bf9e,
+               0 0 23px #17bf9e,
+               0 0 65px #17bf9e,
+               0 0 155px #17bf9e;
+}
+
+
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 377px;
+    margin: 20px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-description {
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-weight: bold;
+  }
+  .card-btn{
+    width: 90px;
+    border-radius: 22px;
+    border: none;
+    transition: 0.3s ease;
+    font-size: 14px;
+    height: 41px;
+    background-color: #17bf9e;
+    opacity: 0.8;
+    color: black;
+    cursor: pointer;
+  }
+  .card-btn:hover{
+    opacity: 1;
+
+    background-color: #17bf9e;; 
+    box-shadow:0 0 6px #17bf9e,
+               0 0 23px #17bf9e,
+               0 0 65px #17bf9e,
+               0 0 155px #17bf9e;
+  }

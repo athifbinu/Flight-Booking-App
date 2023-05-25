@@ -4,58 +4,79 @@ import "../Style/Search.css"
 import data from '../assets/Data/Datas'
 import { useState } from 'react'
 
-const Search = ({flight,setFilteredFlight}) => {
-    
-    const [flightName, setFlightName] = useState('');
-    const [from, setFrom] = useState('');
-    const [to, setTo] = useState('');
+import { Link } from 'react-router-dom'
 
 
-    const handleSearch=(e)=>{
-        e.preventDefault()
+
+const Search = () => {
 
 
-        const filtered=flight.filter((flight)=>{
+  const [from,setFrom]=useState('')
 
-            const lowerFlightName=flightName.toLowerCase();
-            const lowerForm=from.toLowerCase();
-            const lowerTo=to.toLowerCase()
+  const [to,setTo]=useState('')
 
-            return(
-                flight.name.toLowerCase().includes(lowerFlightName)&&
-                flight.from.toLowerCase().includes(lowerForm)&&
-                flight.to.toLowerCase().includes(lowerTo)
-            )
-        })
+  const [filter,setFilter]=useState([])
 
 
-        setFilteredFlight(filtered)
+  const handleInputChange=(e)=>{
+    const { name, value } = e.target;
 
-
-        setFlightName("");
-        setFrom("");
-        setTo("");
+    if (name === 'from') {
+      setFrom(value);
+    } else if (name === 'to') {
+      setTo(value);
     }
+  }
 
 
-    console.log(data)
+  const handleSearch=()=>{
+      const filterData=data.filter((flight)=>flight.from===from && flight.To===to)
+
+
+
+      console.log(filterData)
+
+      setFilter(filterData)
+      
+  }
+
   return (
-    <form onSubmit={handleSearch}>
-        <input type='text' placeholder='Flight Name' value={flightName}
-        onChange={(e)=>setFlightName(e.target.value)} />
+    <div className="container">
+        <div className='serch-box'>
+            <input  type='text' name='from' value={from} onChange={handleInputChange} placeholder='From'/>
+            <input type='text' name='to' value={to} onChange={handleInputChange} placeholder='To'/>
+            <button onClick={handleSearch}>Search</button>
+        </div>
 
-<input type='text' placeholder='From' value={from}
-        onChange={(e)=>setFrom(e.target.value)} />
+      {
+        filter.map((flight,index)=>(
+
+          <div key={index} className="product-card">
+          <img src={flight.Img} alt="" className="product-image" />
+         <h3 className="product-name">{flight.flightName}</h3>
+         <p className="product-description">From={flight.from}</p>
+         <p className="product-description">TO ={flight.To}</p>
+        <p className="product-price">${flight.Ticket}</p>
+           <Link to="/Book">
+           <button className='card-btn'>Book Now</button>
+           </Link>
+         </div> 
+
+        ))
+      }
 
 
-<input type='text' placeholder='To' value={to}
-        onChange={(e)=>setTo(e.target.value)} />
 
 
-      <button type='submit'>Search</button>
-       
-    </form> 
+        
+
+     </div>
+
+
+
   )
 }
 
 export default Search
+
+
